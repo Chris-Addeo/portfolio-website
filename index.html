@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chris Addeo | Portfolio</title>
+    <link rel="icon" href="media/icons/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Include Typed.js Library -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+</head>
+
+<body>
+
+    <!-- || NavBar || -->
+    <nav class="nav_begin">
+
+        <!-- Links to Spots on the Page -->
+        <span class="nav_element nav_intro_active" id="nav_intro">Chris Addeo</span>
+
+        <ul>
+            <li class="nav_element" id="nav_about">ABOUT</li>
+
+            <li class="nav_element" id="nav_projects">PROJECTS</li>
+
+            <li class="nav_element" id="nav_work">WORK</li>
+
+        </ul>
+
+        <button class="nav_element nav_contact_active" id="nav_contact">CONTACT</button>
+    </nav>
+
+    <!-- || Page Itself || -->
+    <div id="main_container">
+
+        <!-- Opening Section -->
+        <div id="intro" class="container">
+            <div id="intro_overlay">
+
+                <img id="intro_pic" src="media/me.jpg" alt="Photo of me">
+
+                <h1>Christopher Addeo</h1>
+
+                <h2>I'm a <span class="auto-type"></span></h2>
+
+                <!-- Auto-Typed Function Parameters -->
+                <script>
+                    var typed = new Typed(".auto-type", {
+                        strings: ['Student', 'Software Developer', 'Problem Solver', 'Cloud Engineer', 'Taco Enthusiast'],
+                        typeSpeed: 60,
+                        backSpeed: 120,
+                        backDelay: 400,
+                        loop: true,
+                    });
+                </script>
+            </div>
+        </div>
+
+
+        <!-- || About Section || -->
+        <div id="about" class="container">
+
+            <div id="about-content">
+
+                <div id="about_box1">
+
+                    <p>
+                    <h3>About</h3>
+                    </p>
+
+                    <p class=".about_p">
+                        <code>Hello, world!</code> I'm Chris—a rising senior at New York University. I major in <code>Computer
+                        Science</code> and have minors in <code>Web Applications</code> and <code>Data Science.</code>
+                    </p>
+
+                    <p class=".about_p">
+
+                        Outside of class, I like to write music, hunt down boba spots, and explore the city with
+                        friends.
+                    </p>
+
+                    <p class=".about_p">
+                        Two of my favorite classes were Public Spaces, where I learned about contrasting theories
+                        behind the world we live in, and Programming Tools for Data Science, where I cleaned and
+                        analyzed interesting data sets with relevant tools.
+                    </p>
+
+                    <p class=".about_p">
+                        Some of my development skills include proficiency in <code>Java</code> for software
+                        applications, <code>Azure</code> for cloud infrastructure, <code>Python</code> for data-driven
+                        solutions, and <code>JavaScript</code> for interactive web pages.
+                    </p>
+                </div>
+
+                <img id="baby_pic" src="media/baby_pic2.png" alt="Photo of baby me">
+
+            </div>
+
+        </div>
+
+
+        <!-- || Projects Section || -->
+        <div id="projects_overlay">
+
+            <!-- List Projects (Mountain Climb, Movie Persona, Gravity Quiz, Webscraping)-->
+            <div id="projects" class="container">
+
+                <p>
+                <h3>Projects</h3>
+                </p>
+
+                <div class="project">
+                    <img id="pp1" src="media/BST.jpg" alt="Mountain Icon">
+
+                    <div id="pb1">
+                        <p class="p_name">Hiker's Haven: Trailblazing Mountains</p>
+                        <p class="p_spec">Java | Fall 2022</p>
+                        <p>
+                            I developed an object-oriented binary search tree that finds the optimal paths for
+                            hikers, factoring in rest stops with cliffs, obstacles, tools, and food rations. The
+                            magic happens through backtracking and a generic node class that could polymorphically
+                            handle rest-stop objects.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div id="pb2">
+                        <p class="p_name">Lights, Cameras, Insights: Decoding Your Movie Persona</p>
+                        <p class="p_spec">Python | Summer 2022</p>
+                        <p>
+                            Ever wondered what your movie choices say about you? Turns out they reveal a lot about
+                            your spending habits, extroversion levels, and risk evaluation. Through dimension
+                            reduction and k-means clustering techniques, I could predict what movies you'd like
+                            based on personality factors with 85% accuracy.
+                        </p>
+                    </div>
+                    <img id="pp2" src="media/Movies.png" alt="Movie Project Icon">
+                </div>
+
+                <div class="project">
+                    <div id="pb3">
+                        <p class="p_name">AudioFrenzy: Exploring iTunes Audiobook Trends</p>
+                        <p class="p_spec">Python | Fall 2022</p>
+                        <p>
+                            I collaborated with a classmate to unravel the secrets of iTunes audiobooks. We scraped
+                            and organized data for 3,000 audiobooks and found the hottest genres, top authors,
+                            priciest collections, and longest listens.
+                        </p>
+                    </div>
+                    <img id="pp3" src="media/itunes.png" alt="Audiobooks Project Icon">
+                </div>
+
+                <div class="project">
+                    <img id="pp4" src="media/chat.jpg" alt="Chatroom Project Icon">
+                    <div id="pb4">
+                        <p class="p_name">ChatterBox: Dynamic Messaging Platform</p>
+                        <p class="p_spec">Javascript | Spring 2023</p>
+                        <p>
+                            Conversations come alive in this digital space through harnessing the power of Node.js
+                            and Express. I integrated SQL databases to handle logins and manage message storage and
+                            retrieval, enabling users to text in real time.
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <!-- || Work Section || -->
+        <div id="work_overlay">
+            <div id="work" class="container">
+
+                <p>
+                <h3>Work</h3>
+                </p>
+
+                <div class="job">
+                    <a href="https://www.OHLA-USA.com/" target="_blank">
+                        <img id="wp1" src="media/icons/OHLA_icon.png" alt="OHLA Icon">
+                    </a>
+
+                    <div id="wb1">
+                        <p class="w_name"><span class="w_spec">Cloud Solutions Engineer Intern,</span> OHLA</p>
+                        <p>
+                            Deployed a cloud-based registration system to streamline management and tracking of 5,000+
+                            devices. Built scalable data pipelines to ingest 200,000+ records. Automated data collection
+                            from Azure Autopilot, Intune, & Active Directory to maintain Asset Tracking.
+
+                        </p>
+                    </div>
+                </div>
+
+                <div class="job">
+                    <div id="wb2">
+                        <p class="w_name"><span class="w_spec">Freelance Writer,</span> FutureSelf Media</p>
+                        <p>
+                            Crafted compelling pitch decks and presentations to captivate new media clients. Wrote and
+                            reviewed grant applications for financing independent short films.
+                        </p>
+                    </div>
+                    <a href="https://www.FutureSelfSite.com/" target="_blank">
+                        <img id="wp2" src="media/icons/FS_icon.png" alt="FutureSelf Media Icon">
+                    </a>
+                </div>
+
+                <div class="job">
+                    <a href="https://www.CLLTutoring.com/" target="_blank">
+                        <img id="wp3" src="media/icons/CLL_icon.png" alt="CLL Icon">
+                    </a>
+
+                    <div id="wb3">
+                        <p class="w_name"><span class="w_spec">Tutor,</span> Collaborative Learning Labs</p>
+                        <p>
+                            Strengthened 5 elementary-high school students' math, reading, and writing skills for
+                            placement exams. Tailored teaching strategies, resulting in significant academic growth and
+                            confidence among students.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- || Contact Section || -->
+        <div id="contact" class="container">
+
+            <!-- Contact Intro -->
+            <div id="contact_intro">
+                <p>
+                <h3 id="contact_h3">Contact</h3>
+                </p>
+
+                <p id="contact_items">
+                    Email:
+                    <span id="email">
+                        cda8682@nyu.edu
+                    </span>
+                    | Phone:
+                    <span id="phone">
+                        631-372-3249
+                    </span>
+                </p>
+
+                <p id="use_form">...or, use the following form</p>
+            </div>
+
+            <!-- Contact Form -->
+            <div id="contact_background">
+
+                <div id="contact_form">
+
+                    <!-- Form Itself -->
+                    <form id="emailForm" action="https://formsubmit.co/work@chrisaddeo.com" method="POST">
+
+                        <!-- Boxes for organizing the form -->
+                        <div id="c_boxes">
+
+                            <!-- Left Column for email form (Name, email, phone) -->
+                            <div class="left-column">
+                                <input type="text" id="u_name" name="name" required placeholder="Your Name*">
+                                <input type="email" id="u_email" name="email" required placeholder="Your Email*">
+                                <input type="tel" id="u_phone" name="phone" required placeholder="Your Phone*">
+                            </div>
+
+                            <!-- Right Column for email form (Message) -->
+                            <div class="right-column">
+                                <textarea id="u_message" name="u_message" required
+                                    placeholder="Your Message*"></textarea>
+                            </div>
+                        </div>
+
+                        <!-- Submit Button-->
+                        <input type="submit" value="Send Email">
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- || Main Scripts || -->
+    <script>
+
+        // Shared DOM Queries
+        let navHeight = document.querySelector('nav').offsetHeight;
+        let navButton = document.getElementById('nav_contact');
+        let navbar = document.querySelector('nav');
+        let secondDiv = document.getElementById('intro');
+        let scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+        /* Add changes to navbar when scrolling */
+        window.addEventListener('scroll', function () {
+            navbar = document.querySelector('nav');
+            secondDiv = document.getElementById('intro');
+            scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+            var triggerPoint = secondDiv.offsetTop + 100; // Trigger point is set to the top offset of the second div
+
+            // Add spacing and transparent background when in intro
+            if (scrollPosition >= triggerPoint) {
+                navbar.classList.remove('nav_begin');
+                navButton.style.letterSpacing = '0px';
+            } else {
+                navbar.classList.add('nav_begin');
+                navButton.style.letterSpacing = '2px';
+            }
+
+            // Change navbar highlight when in section
+            var sections = document.querySelectorAll('.container'); // Get all sections with class 'container'
+            navHeight = document.querySelector('nav').offsetHeight;
+
+            // Loop through each section to determine the active section
+            for (var i = 0; i < sections.length; i++) {
+
+                var section = sections[i];
+                var sectionId = section.getAttribute('id');
+                var navItem = document.getElementById('nav_' + sectionId);
+
+                // Get navbar height
+                var sectionTop = section.offsetTop - navHeight - 1;
+                var sectionBottom = sectionTop + section.offsetHeight;
+
+                // Make nav section active when in screen
+                if (window.pageYOffset >= sectionTop && window.pageYOffset < sectionBottom) {
+
+                    navItem.classList.add('active');
+
+                    if (sectionId == 'contact') {
+                        navItem.classList.add('nav_contact_active');
+                    }
+                    else if (sectionId == 'intro') {
+                        navItem.classList.add('nav_intro_active');
+                    }
+                }
+
+                // Make nav section inactive when off screen
+                else {
+
+                    navItem.classList.remove('active');
+
+                    if (sectionId == 'contact') {
+                        navItem.classList.remove('nav_contact_active');
+                    }
+                    else if (sectionId == 'intro') {
+                        navItem.classList.remove('nav_intro_active');
+                    }
+                }
+            }
+        });
+
+        /* Add scrolling to all navbar elements */
+        document.addEventListener('DOMContentLoaded', function () {
+
+            var navItems = document.querySelectorAll('.nav_element');
+            var containerSections = document.querySelectorAll('.container');
+            navHeight = document.querySelector('nav').offsetHeight;
+
+            navItems.forEach(function (navItem) {
+                navItem.addEventListener('click', function (event) {
+
+                    event.preventDefault();
+                    var targetId = this.getAttribute('id').replace('nav_', '');
+                    var targetSection = document.getElementById(targetId);
+                    var targetOffset = targetSection.offsetTop - navHeight;
+
+                    window.scrollTo({
+                        top: targetOffset,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+
+        /* Max of 500 characters for text input */
+        var textarea = document.getElementById('u_message');
+
+        textarea.addEventListener('input', function () {
+            var maxLength = 500; // Maximum number of characters
+            var currentLength = textarea.value.length;
+
+            if (currentLength > maxLength) {
+                textarea.value = textarea.value.substring(0, maxLength);
+            }
+        });
+
+        /* Depracated because I removed the Enter button from the intro slide
+
+        const enter_button = document.getElementById('enter_button');
+        enter_button.addEventListener('click', function (event) {
+
+            event.preventDefault();
+            var targetSection = document.getElementById("about");
+            navHeight = document.querySelector('nav').offsetHeight;
+            var targetOffset = targetSection.offsetTop - navHeight;
+
+            window.scrollTo({
+                top: targetOffset,
+                behavior: 'smooth'
+            });
+        });
+        */
+
+        /* For Funsies */
+        const Student = {
+            name: "Chris Addeo",
+            school: "New York University",
+            grad_date: "Spring 2024",
+            major: "Computer Science",
+            minor: ["Data Science", "Web Applications"]
+        }
+
+    </script>
+
+</body>
+
+</html>
