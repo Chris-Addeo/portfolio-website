@@ -1,0 +1,558 @@
+/* --- Misc --- */
+
+/* Imported Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Titillium+Web:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap');
+
+code {
+    background-color: #f4f4f4;
+    padding: 2px 4px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-family: Consolas, monospace;
+}
+
+/* Highlight Color */
+::selection {
+    background-color: rgb(255, 137, 82);
+}
+
+/* --- HTML Elements --- */
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(244, 244, 243);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* --- Navigation Bar --- */
+nav {
+    background-color: #24252A;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1.55vh 5%;
+    z-index: 100;
+    transition: background-color 0.3s ease;
+}
+
+/* Transparent Opening Background */
+.nav_begin {
+    background-color: transparent;
+    letter-spacing: .24vh;
+}
+
+/* Chris Addeo Button and Hover */
+#nav_intro {
+    display: none;
+    color: rgb(253, 107, 40);
+    font-size: 3.3vh;
+    font-weight: bolder;
+    cursor: pointer;
+    margin-right: auto;
+    transition: all 0.3s ease 0s;
+}
+
+/* Nav Bullets */
+li,
+#nav_contact {
+    font-size: 1.9vh;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0vh 2.4vh;
+    transition: all 0.3s ease 0s;
+}
+
+/* Active & Hovered Section */
+.active {
+    color: rgb(253, 107, 40);
+    font-weight: bolder;
+}
+
+
+/* Nav Contact Button */
+#nav_contact {
+    margin-left: 2.4vh;
+    padding: 1.2vh 3.3vh;
+    background-color: rgb(253, 107, 40);
+    border: none;
+    border-radius: 6vh;
+    border-top-right-radius: 1.2vh;
+    letter-spacing: .24vh;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+
+
+
+
+/* --- Main Container --- */
+#main_container {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
+
+/* Background Image */
+#intro {
+    background-image: url('media/greenpoint.jpg');
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 0px;
+}
+
+/* Gradient Effect */
+#intro::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, .3));
+}
+
+/* Content Overlay */
+#intro_overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+
+/* My photo */
+#intro_pic {
+    margin-bottom: 40px;
+    height: 280px;
+    border-radius: 5%;
+    border: 6px solid #e9c46a;
+}
+
+
+
+/* Content */
+h1 {
+    font-size: 36px;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 28px;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+}
+
+h2 span {
+    color: #e9c46a;
+}
+
+
+/* Section Headers */
+h3 {
+    font-size: 40px;
+    color: rgb(253, 107, 40);
+    font-family: 'Kanit', sans-serif;
+    font-weight: bold;
+    border-bottom: 3px solid #e9c46a;
+}
+
+
+
+
+/* --- About --- */
+#about {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #f5ebe0;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0 0 10px;
+}
+
+/* Baby Pic */
+#baby_pic {
+    height: 300px;
+    border: solid rgb(255, 137, 82) 1vh;
+    border-radius: 5%;
+    border-top-right-radius: 100px;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* --- Projects --- */
+#projects {
+    background-color: rgb(244, 244, 243);
+    box-sizing: border-box;
+    width: 100%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/* Background to give lipped effect */
+#projects_overlay {
+    background-color: #f5ebe0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* Project Section */
+.project {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    flex-direction: column;
+    width: 100%;
+    height: 20%;
+    margin-bottom: 5%;
+}
+
+/* Project 1 Image */
+#pp1 {
+    height: 200px;
+    width: 290px;
+    margin-bottom: 20px;
+    border-radius: 5%;
+}
+
+/* Project 2 Image */
+#pp2 {
+    height: 200px;
+    width: 260px;
+    margin-left: 10px;
+    border-radius: 5%;
+}
+
+/* Project 3 Image */
+#pp3 {
+    height: 180px;
+    width: 180px;
+    margin-bottom: 10px;
+    border-radius: 5%;
+}
+
+/* Project 4 Image */
+#pp4 {
+    height: 200px;
+    width: 350px;
+    margin-right: 10px;
+    border-radius: 5%;
+}
+
+/* Project Title Design */
+.p_name {
+    font-size: 16px;
+    margin: 0 0 5px;
+    color: rgb(253, 107, 40);
+    font-weight: bolder;
+    border-left: solid #e9c46a 4px;
+    padding-left: 5px;
+}
+
+/* Project Specs Design */
+.p_spec {
+    font-weight: bolder;
+    border-left: solid #e9c46a 4px;
+    padding-left: 5px;
+    margin-top: -5px;
+    padding-top: 2px;
+}
+
+
+
+
+
+
+
+
+/* --- Work --- */
+#work {
+    background-color: #f5ebe0;
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+}
+
+/* For Ellpise Effect */
+#work_overlay {
+    background-color: #24252A;
+}
+
+.job {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    height: 20%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+/* OHLA Icon */
+#wp1 {
+    height: 100px;
+    border-radius: 20px;
+    border-bottom-right-radius: 5px;
+}
+
+/* FutureSelf Icon */
+#wp2 {
+    height: 80px;
+    width: 300px;
+    border-radius: 20px;
+    border-bottom-left-radius: 5px;
+}
+
+/* CLL Icon */
+#wp3 {
+    height: 80px;
+    width: 280px;
+    border-radius: 20px;
+    border-bottom-right-radius: 5px;
+}
+
+/* Position Title */
+.w_name {
+    font-weight: bolder;
+    color: rgb(253, 107, 40);
+    border-left: solid #e9c46a 5px;
+    padding-left: 10px;
+}
+
+/* Company Name */
+.w_spec {
+    color: black;
+}
+
+
+
+
+/* --- Contact --- */
+#contact {
+    background-color: #24252A;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    align-items: center;
+    width: 100%;
+    height: 89%;
+    padding-bottom: 0%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#contact_intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    margin-bottom: 20px;
+}
+
+.contact_info {
+    color: rgb(253, 107, 40);
+    justify-content: center;
+}
+
+#contact_items {
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+}
+
+#contact_h3 {
+    justify-content: center;
+    color: white;
+    border-color: rgb(253, 107, 40);
+}
+
+#use_form {
+    font-weight: bold;
+    color: white;
+}
+
+#email {
+    color: #e9c46a;
+}
+
+#phone {
+    color: #e9c46a;
+}
+
+#linkedIn a {
+    color: #e9c46a;
+}
+
+#contact_background {
+    background-image: url('media/transmitter.jpg');
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 500px 500px 10px 10px / 50px 50px 10px 10px;
+}
+
+/* Gradient Effect */
+#contact_background::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, .1));
+    border-radius: 500px 500px 0px 0px / 50px 50px 0px 0px;
+    z-index: 1;
+}
+
+#contact_form {
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+}
+
+/* Form Container */
+#emailForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10%;
+    padding-top: 5%;
+    z-index: 3;
+}
+
+#c_boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Create space between the left and right columns */
+    width: 100%;
+}
+
+.left-column,
+.right-column {
+    width: 100%;
+    /* Adjust the width for your desired spacing */
+}
+
+.left-column {
+    display: flex;
+    flex-direction: column;
+}
+
+#emailForm {
+    font-size: 20px;
+    padding-top: 5%;
+}
+
+/* Style for form fields */
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    line-height: 1.6;
+    border: 0px solid #e9c46a;
+    transition: outline 0.2s ease;
+}
+
+/* Style for the message */
+textarea {
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    line-height: 1.6;
+    resize: none;
+    border: 0px solid #e9c46a;
+    transition: outline 0.2s ease;
+}
+
+/* Style for the submit button */
+input[type="submit"] {
+    background-color: rgb(253, 107, 40);
+    color: white;
+    font-weight: bolder;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 150px;
+    font-size: 16px;
+    line-height: 1.6;
+    border: 0px solid rgb(255, 137, 82);
+    transition: background-color 0.3s ease;
+}
+
+
+
+/* Style for the form click effect */
+input:focus,
+textarea:focus {
+    outline: 3px solid #e9c46a;
+}
+
+/* If modified */
+input[type="submit"]:focus {
+    outline: 2px solid rgb(255, 137, 82);
+}
