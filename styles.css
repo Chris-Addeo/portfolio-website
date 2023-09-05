@@ -491,6 +491,10 @@ p {
     color: #e9c46a;
 }
 
+#linkedIn a {
+    color: #e9c46a;
+}
+
 #contact_background {
     background-image: url('media/transmitter.jpg');
     background-position: center;
