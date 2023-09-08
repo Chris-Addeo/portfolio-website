@@ -280,6 +280,10 @@ p {
     cursor: not-allowed;
 }
 
+#baby_pic_mobile {
+    display: none;
+}
+
 #about_box1 {
     flex: 1;
     padding-right: 30px;
@@ -319,9 +323,14 @@ p {
 
 /* Project 1 Image */
 #pp1 {
+    display: block;
     height: 300px;
     margin-right: 20px;
     border-radius: 5%;
+}
+
+#pp1_mobile {
+    display: none;
 }
 
 /* Project 2 Image */
@@ -340,9 +349,14 @@ p {
 
 /* Project 4 Image */
 #pp4 {
+    display: block;
     height: 250px;
     margin-right: 20px;
     border-radius: 5%;
+}
+
+#pp4_mobile {
+    display: none;
 }
 
 /* Project Title Design */
@@ -399,10 +413,15 @@ p {
 
 /* OHLA Icon */
 #wp1 {
+    display: block;
     height: 140px;
     border-radius: 30px;
     border-bottom-right-radius: 5px;
     margin-right: 20px;
+}
+
+#wp1_mobile {
+    display: none;
 }
 
 /* FutureSelf Icon */
@@ -416,11 +435,16 @@ p {
 
 /* CLL Icon */
 #wp3 {
+    display: block;
     height: 120px;
     width: 450px;
     border-radius: 30px;
     border-bottom-right-radius: 5px;
     margin-right: 20px;
+}
+
+#wp3_mobile {
+    display: none;
 }
 
 /* Position Title */
@@ -484,10 +508,6 @@ p {
 }
 
 #email {
-    color: #e9c46a;
-}
-
-#phone {
     color: #e9c46a;
 }
 
