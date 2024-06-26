@@ -23,9 +23,26 @@
     <!-- Typed.js Library -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
+    <!-- AOS Library -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.0/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.0/dist/aos.js"></script>
+
 </head>
 
 <body>
+
+    <!-- AOS Initialization -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            AOS.init({
+                mirror: false,
+                offset: window.innerWidth < 768 ? 100 : 35, // Different offsets for mobile and desktop
+                duration: 400, // Duration of the animation
+                once: true, // Whether animation should happen only once - while scrolling down
+                disable: false // This can be a function to disable AOS based on certain conditions
+            });
+        });
+    </script>
 
     <!-- || NavBar || -->
     <nav class="nav_begin">
@@ -61,7 +78,7 @@
                 <!-- Auto-Typed Function Parameters -->
                 <script>
                     var typed = new Typed(".auto-type", {
-                        strings: ['Student', 'Software Developer', 'Problem Solver', 'Cloud Engineer', 'Taco Enthusiast'],
+                        strings: ['Student', 'Software Developer', 'Taco Enthusiast', 'Problem Solver', 'Cloud Engineer', 'Llama Llover'],
                         typeSpeed: 60,
                         backSpeed: 120,
                         backDelay: 400,
@@ -80,38 +97,45 @@
                 <div id="about_box1">
 
                     <p>
-                    <h3>About</h3>
+                    <h3 data-aos="fade-up">About</h3>
                     </p>
 
-                    <p class=".about_p">
-                        <code>Hello, world!</code> I'm Chris—a rising senior at New York University. I major in <code>Computer
-                        Science</code> and have minors in <code>Web Applications</code> and <code>Data Science.</code>
+                    <p class=".about_p" data-aos="fade-up">
+                        <code>Hello, world!</code> I'm Chris—a recent grad from New York University (May 2024). I
+                        majored in <code>Computer
+                        Science</code> and have minors in <code>Web Applications</code> and <code>Data Science</code>!
                     </p>
 
-                    <p class=".about_p">
+                    <p class=".about_p" data-aos="fade-up">
 
-                        Outside of class, I like to write music, hunt down boba spots, and explore the city with
-                        friends.
+                        Outside of class, I like to write music, hunt down boba spots, git tacos, and explore the city
+                        with friends.
                     </p>
 
                     <!-- Mobile Image -->
-                    <img id="baby_pic_mobile" src="media/baby_pic2.png" alt="Photo of baby me">
+                    <img id="baby_pic_mobile" src="media/baby_pic2.png" alt="Photo of baby me" data-aos="fade-up">
 
-                    <p class=".about_p">
-                        Two of my favorite classes were Public Spaces, where I learned about contrasting theories
-                        behind the world we live in, and Programming Tools for Data Science, where I cleaned and
-                        analyzed interesting data sets with relevant tools.
+                    <p class=".about_p" data-aos="fade-up">
+                        My 2 favorite classes were Public Spaces, where I learned about conflicting theories
+                        regarding the world we live in, and Programming Tools for Data Science, where I
+                        pulled and cleaned data from the Wild West (the internet) to conduct my own research.
                     </p>
 
-                    <p class=".about_p">
+                    <p class=".about_p" data-aos="fade-up">
                         Some of my development skills include proficiency in <code>Java</code> for software
                         applications, <code>Azure</code> for cloud infrastructure, <code>Python</code> for data-driven
                         solutions, and <code>JavaScript</code> for interactive web pages.
                     </p>
+
+                    <p class=".about_p" data-aos="fade-up">
+                        Although I have experience with various frameworks and tools, like <code>Flask</code>,
+                        <code>Node.js</code>, <code>Express</code>, and <code>React</code>,
+                        this webpage is built exclusively with <code>Vanilla Javascript</code>! Hope you enjoy.
+                    </p>
                 </div>
 
                 <!-- Desktop Image -->
-                <img id="baby_pic" src="media/baby_pic2.png" alt="Photo of baby me">
+                <img id="baby_pic" src="media/baby_pic2.png" alt="Photo of baby me" data-aos="fade-up">
 
             </div>
 
@@ -125,75 +149,75 @@
             <div id="projects" class="container">
 
                 <p>
-                <h3>Projects</h3>
+                <h3 data-aos="fade-right">Projects</h3>
                 </p>
 
                 <div class="project">
-                    <img id="pp1" src="media/BST.jpg" alt="Mountain Icon">
+                    <img id="pp1" src="media/BST.jpg" alt="Mountain Icon" data-aos="fade-right">
 
                     <!-- Desktop Project 1 Pic -->
-                    <div id="pb1">
+                    <div id="pb1" data-aos="fade-right">
                         <p class="p_name">Hiker's Haven: Trailblazing Mountains</p>
-                        <p class="p_spec">Java | Fall 2022</p>
+                        <p class="p_spec">Java</p>
                         <p>
-                            I developed an object-oriented binary search tree that finds the optimal paths for
-                            hikers, factoring in rest stops with cliffs, obstacles, tools, and food rations. The
-                            magic happens through backtracking and a generic node class that could polymorphically
-                            handle rest-stop objects.
+                            Imagine being stuck alone on a mountain trail (AHHH!) with food rations, cliffs, tools, &&
+                            obstacles at every stop.
+                            I developed an object-oriented binary search tree that helps hikers like you find the
+                            optimal (and safest!) paths down.
                         </p>
                     </div>
 
                     <!-- Mobile Project 1 Pic -->
-                    <img id="pp1_mobile" src="media/BST.jpg" alt="Mountain Icon">
+                    <img id="pp1_mobile" src="media/BST.jpg" alt="Mountain Icon" data-aos="fade-right">
                 </div>
 
                 <div class="project">
-                    <div id="pb2">
+                    <div id="pb2" data-aos="fade-left">
                         <p class="p_name">Lights, Cameras, Insights: Decoding Your Movie Persona</p>
-                        <p class="p_spec">Python | Summer 2022</p>
+                        <p class="p_spec">Python</p>
                         <p>
-                            Ever wondered what your movie choices say about you? Turns out they reveal a lot about
+                            Ever wondered what your movie choices say about you? Turns out they often reveal
                             your spending habits, extroversion levels, and risk evaluation. Through dimension
-                            reduction and k-means clustering techniques, I could predict what movies you'd like
+                            reduction and k-means clustering techniques, I could also predict what movies you'd like
                             based on personality factors with 85% accuracy.
                         </p>
                     </div>
 
                     <!-- Desktop && Mobile Project 2 Pic -->
-                    <img id="pp2" src="media/Movies.png" alt="Movie Project Icon">
+                    <img id="pp2" src="media/Movies.png" alt="Movie Project Icon" data-aos="fade-left">
                 </div>
 
                 <div class="project">
-                    <div id="pb3">
+                    <div id="pb3" data-aos="fade-left">
                         <p class="p_name">AudioFrenzy: Exploring iTunes Audiobook Trends</p>
-                        <p class="p_spec">Python | Fall 2022</p>
+                        <p class="p_spec">Python</p>
                         <p>
-                            I collaborated with a classmate to unravel the secrets of iTunes audiobooks. We scraped
-                            and organized data for 3,000 audiobooks and found the hottest genres, top authors,
-                            priciest collections, and longest listens.
+                            I collaborated with a classmate to unravel the secrets of iTunes Audiobooks. We scraped
+                            and organized data from over 3,000 audiobooks, finding the hottest genres, top authors,
+                            priciest collections, && longest listens. Taylor left her fans to dominate these charts.
                         </p>
                     </div>
 
                     <!-- Desktop && Mobile Project 3 Pic -->
-                    <img id="pp3" src="media/itunes.png" alt="Audiobooks Project Icon">
+                    <img id="pp3" src="media/itunes.png" alt="Audiobooks Project Icon" data-aos="fade-left">
                 </div>
 
                 <div class="project">
 
                     <!-- Desktop Project 4 Pic -->
-                    <img id="pp4" src="media/chat.jpg" alt="Chatroom Project Icon">
-                    <div id="pb4">
+                    <img id="pp4" src="media/chat.jpg" alt="Chatroom Project Icon" data-aos="fade-right">
+                    <div id="pb4" data-aos="fade-right">
                         <p class="p_name">ChatterBox: Dynamic Messaging Platform</p>
-                        <p class="p_spec">Javascript | Spring 2023</p>
+                        <p class="p_spec">Javascript</p>
                         <p>
-                            Conversations come alive in this digital space through harnessing the power of Node.js
-                            and Express. I integrated SQL databases to handle logins and manage message storage and
-                            retrieval, enabling users to text in real time.
+                            Conversations come alive in this digital world through harnessing the power of Node.js
+                            && Express. I integrated SQL databases to handle logins and manage message storage and
+                            retrieval, enabling users to chat with each other in real time!
                         </p>
                     </div>
 
                     <!-- Mobile Project 4 Pic -->
-                    <img id="pp4_mobile" src="media/chat.jpg" alt="Chatroom Project Icon">
+                    <img id="pp4_mobile" src="media/chat.jpg" alt="Chatroom Project Icon" data-aos="fade-right">
                 </div>
 
 
@@ -206,10 +230,10 @@
             <div id="work" class="container">
 
                 <p>
-                <h3>Work</h3>
+                <h3 data-aos="fade-right">Work</h3>
                 </p>
 
-                <div class="job">
+                <div class="job" data-aos="fade-right">
 
                     <!-- Desktop Work Pic -->
                     <a href="https://www.OHLA-USA.com/" target="_blank">
@@ -219,10 +243,9 @@
                     <div id="wb1">
                         <p class="w_name"><span class="w_spec">Cloud Solutions Engineer Intern,</span> OHLA</p>
                         <p>
-                            Deployed a cloud-based registration system to streamline management and tracking of 5,000+
-                            devices. Built scalable data pipelines to ingest 200,000+ records. Automated data collection
-                            from Azure Autopilot, Intune, & Active Directory to maintain Asset Tracking.
-
+                            I collaborated with a team of developers to build a cloud-based registration system of
+                            company devices in Azure. This including the creation of scalable data pipelines to ingest
+                            200,000+, automating data collection, and normalizing databases.
                         </p>
                     </div>
 
@@ -232,12 +255,12 @@
                     </a>
                 </div>
 
-                <div class="job">
+                <div class="job" data-aos="fade-left">
                     <div id="wb2">
                         <p class="w_name"><span class="w_spec">Freelance Writer,</span> FutureSelf Media</p>
                         <p>
-                            Crafted compelling pitch decks and presentations to captivate new media clients. Wrote and
-                            reviewed grant applications for financing independent short films.
+                            I crafted pitch decks for new media clients, helped actors rehearse lines, wrote grant
+                            applications, and revised feature-length films and tv-series pilots.
                         </p>
                     </div>
 
@@ -247,7 +270,7 @@
                     </a>
                 </div>
 
-                <div class="job">
+                <div class="job" data-aos="fade-right">
 
                     <!-- Desktop Work Pic -->
                     <a href="https://www.CLLTutoring.com/" target="_blank">
@@ -257,9 +280,8 @@
                     <div id="wb3">
                         <p class="w_name"><span class="w_spec">Tutor,</span> Collaborative Learning Labs</p>
                         <p>
-                            Strengthened 5 elementary-high school students' math, reading, and writing skills for
-                            placement exams. Tailored teaching strategies, resulting in significant academic growth and
-                            confidence among students.
+                            I tailored teaching strategies for students to prepare them for placement exams, improve
+                            academic confidence, and learn executive-functioning skills.
                         </p>
                     </div>
 
@@ -279,20 +301,25 @@
             <!-- Contact Intro -->
             <div id="contact_intro">
                 <p>
-                <h3 id="contact_h3">Contact</h3>
+                <h3 id="contact_h3" data-aos="fade-down">Contact</h3>
                 </p>
 
-                <p id="contact_items">
-                    Email:
-                    <span id="email">
-                        work@chrisaddeo.com</span>, LinkedIn:
+                <p id="contact_items" data-aos="fade-down">
+                    LinkedIn:
                     <span id="linkedIn">
-                        <a href="https://www.linkedin.com/in/chris--addeo/">chris--addeo</a>
+                        <a href="https://www.linkedin.com/in/chris--addeo">chris--addeo</a>
+                    </span>
+                </p>
+
+                <p id="contact_items" data-aos="fade-down">
+                    <span id="resume">
+                        You can also
+                        <a href="resume.pdf" target="_blank">download my Resume</a>
                     </span>
                 </p>
 
 
-                <p id="use_form">...or, use the following form</p>
+                <p id="use_form" data-aos="fade-down">. . . or, use the following form</p>
             </div>
 
             <!-- Contact Form -->
@@ -346,8 +373,8 @@
             navbar = document.querySelector('nav');
             secondDiv = document.getElementById('intro');
             scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-            var triggerPoint = secondDiv.offsetTop + 100; // Trigger point is set to the top offset of the second div
-
+            var triggerPoint = 100; // Trigger point is set to the top offset of the second div
+            console.log(triggerPoint);
             // Add spacing and transparent background when in intro
             if (scrollPosition >= triggerPoint) {
                 navbar.classList.remove('nav_begin');
@@ -434,23 +461,6 @@
                 textarea.value = textarea.value.substring(0, maxLength);
             }
         });
-
-        /* Depracated because I removed the Enter button from the intro slide
-
-        const enter_button = document.getElementById('enter_button');
-        enter_button.addEventListener('click', function (event) {
-
-            event.preventDefault();
-            var targetSection = document.getElementById("about");
-            navHeight = document.querySelector('nav').offsetHeight;
-            var targetOffset = targetSection.offsetTop - navHeight;
-
-            window.scrollTo({
-                top: targetOffset,
-                behavior: 'smooth'
-            });
-        });
-        */
 
         /* For Funsies */
         const Student = {

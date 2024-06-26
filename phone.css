@@ -12,6 +12,15 @@ code {
     font-family: Consolas, monospace;
 }
 
+[data-aos] {
+    opacity: 1 !important;
+    /* Make sure elements are visible */
+    visibility: visible !important;
+    /* Ensure they are not hidden */
+    transform: none !important;
+    /* Cancel any transforms that might hide the elements */
+}
+
 /* Highlight Color */
 ::selection {
     background-color: rgb(255, 137, 82);
@@ -25,6 +34,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: rgb(244, 244, 243);
+    overflow-x: hidden;
 }
 
 * {
@@ -40,21 +50,26 @@ nav {
     z-index: 100;
     background-color: #24252A;
     width: 100%;
+    /* Set width to 100% */
     position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 22px;
-    padding-left: 0%;
-    padding-right: 5%;
-    z-index: 100;
+    box-sizing: border-box;
+    /* Include padding and border in the width */
     transition: background-color 0.3s ease;
+    width: 500px;
 }
 
 /* Transparent Opening Background */
 .nav_begin {
     background-color: transparent;
     letter-spacing: 2px;
+    padding: 0%;
+    width: 100%;
+    box-sizing: border-box;
+    opacity: 0;
 }
 
 /* Chris Addeo Button and Hover */
@@ -66,6 +81,8 @@ nav {
     cursor: pointer;
     margin-right: auto;
     transition: all 0.3s ease 0s;
+    box-sizing: border-box;
+    width: 10%;
 }
 
 /* Nav Bullets */
@@ -436,14 +453,12 @@ p {
 #contact {
     background-color: #24252A;
     display: flex;
-    align-items: center;
     box-sizing: border-box;
-    align-items: center;
     width: 100%;
-    height: 107%;
+    height: auto;
     padding-bottom: 0%;
+    align-items: center;
     flex-direction: column;
-    justify-content: center;
 }
 
 #contact_intro {
@@ -488,6 +503,10 @@ p {
     color: #e9c46a;
 }
 
+#resume a {
+    color: #e9c46a;
+}
+
 #contact_background {
     background-image: url('media/transmitter.jpg');
     background-position: center;
@@ -499,36 +518,20 @@ p {
     border-radius: 500px 500px 10px 10px / 50px 50px 10px 10px;
 }
 
-/* Gradient Effect */
-#contact_background::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, .1));
-    border-radius: 500px 500px 0px 0px / 50px 50px 0px 0px;
-    z-index: 1;
-}
-
 #contact_form {
     align-items: center;
-    position: absolute;
+    position: relative;
     width: 100%;
-    z-index: 90;
 }
 
 /* Form Container */
 #emailForm {
-    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 13%;
-    font-size: 20px;
-    z-index: 3;
+    padding: 10%;
+    padding-bottom: 5%;
 }
 
 #c_boxes {
