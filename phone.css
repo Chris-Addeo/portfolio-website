@@ -507,6 +507,11 @@ p {
     color: #e9c46a;
 }
 
+#resume a:link,
+#resume a:visited {
+    color: #e9c46a;
+}
+
 #contact_background {
     background-image: url('media/transmitter.jpg');
     background-position: center;
